@@ -1,0 +1,15 @@
+1) Multiclass classification problem
+
+2) Errors are too costly, it would be somewhat okay to tell a person who doesn' have cancer that he has cancer but it can be disastrous to tell someone who has cancer that he doesn't have cancer. Try and get false negatives too as low as possible. Get Recall as high as possible even at the cost of some precision loss.
+
+3) Use a stricter metric. Log loss: penalises for deviation in probability
+
+4) Interpretability will be super important
+
+5) Latency won't be such a big issue
+
+
+-----Observarions
+1) Imbalanced data
+2) No issues with NaN in Genes and Variations, 5 nulls in TEXT, removed those rows
+3) Issue with rare genes and variations, any gene or variation occuring less than 20 times marked as RARE in train
